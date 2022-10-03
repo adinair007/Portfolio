@@ -1,18 +1,20 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+:root{
+    --page-background:#a8cddf;
+    --black-background:#000000;
+    --white-text:#ffffff;
+    --card-color: rgb(148, 246, 246);
 }
 
+
 body {
-    background-color: #a8cddf;
+    background-color: var(--page-background);
 }
 
 .header {
-    padding: 50px;
+    padding: 30px;
     font-family:'Sacramento';
     background-color: #000000;
-    color: #ffffff;
+    color: white;
 }
 
 .header h1 {
@@ -24,7 +26,7 @@ body {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Montserrat-Black';
     font-size: 20px;
 }
 
@@ -38,7 +40,7 @@ body {
 }
 
 a {
-    color: #ffffff;
+    color: var(--white-text);
     text-decoration: none;
 }
 
@@ -56,6 +58,26 @@ p {
     background-position: center;
 }
 
+.hero-header{
+position: absolute;
+margin-top: 175px;
+margin-bottom: 100px;
+margin-right: 0px;
+margin-left: 1000px;
+height: fit-content;
+width: fit-content;
+background-color: rgb(148, 246, 246);
+color: black;
+flex-wrap: wrap;
+flex-direction: row;
+}
+
+.hero-header h2{
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-weight: 500;
+}
+
 .float-left {
     float: left;
     margin-right: 25px;
@@ -69,25 +91,263 @@ p {
 .content {
     width: 75%;
     display: inline-block;
-    margin-left: 20px;
+    margin-left: auto;
+}
+
+.content h2 {
+    font-family: 'Caveat';
+    font-style: italic;
+    margin-left: 10px ;
+    font-size: 50px; 
 }
 
 .about-me {
     margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
-    color: #ffffff;
+    padding: 30px;
+    height: 50px
+    font-family: 'Montserrat-Regular';
+    font-size: large;
+    flex-wrap: wrap;
+    color: var(--black-background);
 }
+
+.about-me p {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 200px;
+    flex-wrap: wrap;
+}
+
+.work{
+    margin-bottom: 20px;
+    padding: 50px;
+    min-height: auto;
+    font-family: 'Montserrat-Regular';
+    font-size: large;
+    flex-wrap: wrap;
+    color: var(--black-background);
+}
+
+.work h2 {
+    font-family: 'Caveat';
+    font-style: italic;
+    margin-left: -50px ;
+    font-size: 50px;
+    height: 50px;
+}
+
+.work-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: inline-block;
+}
+
+.container {
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(../images/beach.jpg);
+    color: aqua;
+    height: 350px;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid rgb(148, 246, 246);
+}
+
+.container-header{
+position: relative;
+margin-top: 250px;
+margin-bottom: 50px;
+margin-right: 450px;
+margin-left: 0px;
+height: fit-content;
+width: fit-content;
+background-color: rgb(148, 246, 246);
+color: black;
+transition: all 0.5s ease-in-out;
+flex-wrap: wrap;
+flex-direction: row;
+}
+
+.container-header h3{
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-weight: 500;
+
+}
+
+.container-header h4{
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+
+.container:hover,
+.container:hover .container-header {
+    box-shadow: inset 0px 0px 8px rgb(77, 170, 237), 0 0 15px rgb(78, 144, 185);
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card1{
+    display: inline-block;
+    background-image: url(../images/pexels-pixabay-158826.jpg);
+    color: aqua;
+    height: 25px;
+    width: 300px;
+    flex-wrap: wrap;
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    padding: 50px;
+    border: 3px solid rgb(148, 246, 246);
+}
+
+.card2{
+    display: inline-block;
+    background-image: url(../images/accounting-black-budget-calculating-wallpaper-preview.jpg);
+    color: aqua;
+    height: 25px;
+    width: 300px;
+    flex-wrap: wrap;
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    padding: 50px;
+    border: 3px solid rgb(148, 246, 246);
+}
+
+.card3{
+    display:inline-block;
+    background-image: url(../images/7ff5aa2204c532c80dcc425080aeb1be.jpg);
+    color: aqua;
+    height: 25px;
+    width: 300px;
+    flex-wrap: wrap;
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    padding: 50px;
+    border: 3px solid rgb(148, 246, 246);
+}
+
+.card4{
+    display: inline-block;
+    background-image: url(../images/A-Small-Family-Of-4k-Minimalist-Nature-Wallpaper-Lonely-Trees.jpg);
+    color: aqua;
+    height: 25px;
+    width: 300px;
+    flex-wrap: wrap;
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    padding: 50px;
+    border: 3px solid rgb(148, 246, 246);
+}
+
+.card-header{
+    position: absolute;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: -50px;
+    height: fit-content;
+    width: fit-content;
+    background-color: rgb(148, 246, 246);
+    color: black;
+    transition: all 0.5s ease-in-out;
+    flex-wrap: wrap;
+    flex-direction: row;
+    }
+    
+    .card-header h3{
+        font-family: 'Montserrat';
+        font-size: 30px;
+        font-weight: 500;
+    
+    }
+    
+    .card-header h4{
+        font-family: 'Montserrat';
+        font-size: 15px;
+        font-style: italic;
+        font-weight: 300;
+    }
+    
+    
+    .card1:hover, .card2:hover, .card3:hover, .card4:hover,
+    .card1:hover .card-header, .card2:hover .card-header, .card3:hover .card-header, .card4:hover .card-header {
+        box-shadow: inset 0px 0px 8px rgb(77, 170, 237), 0 0 15px rgb(78, 144, 185);
+    }
+
+    .contact-me{
+        margin-bottom: 20px;
+        padding: 50px;
+        min-height: auto;
+        font-family: 'Montserrat-Regular';
+        font-size: large;
+        flex-wrap: wrap;
+        color: var(--black-background);
+    }
+    
+    .contact-me h2 {
+        font-family: 'Caveat';
+        font-style: italic;
+        margin-left: -50px ;
+        font-size: 50px;
+        height: 50px;
+    }
+
+    .contacts{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 50px;
+        font-family: 'Montserrat';
+        font-style: italic;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contacts h4 {
+        font-family: 'Montserrat';
+        font-style: italic;
+        text-align: center;
+        color: #000000;
+        text-decoration: underline;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .contacts h4 a {
+        font-family: 'Montserrat';
+        font-style: italic;
+        text-align: center;
+        color: #000000;
+        text-decoration: underline;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 .footer {
     padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Montserrat';
+    font-style: italic;
     text-align: center;
-}
-
-.footer h2 {
-    font-size: 20px;
+    margin-left: 200px;
 }
