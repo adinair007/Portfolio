@@ -16,7 +16,7 @@ li {
 }
 
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: #131316;
 }
 
 header {
@@ -104,10 +104,10 @@ main {
 }
 
 main section {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 30px;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
 }
 
 section h2 {
@@ -155,6 +155,19 @@ section h2 {
     font-size: large;
     flex-wrap: wrap;
     color: #fff;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }
 
 
@@ -218,7 +231,7 @@ section h2 {
     justify-content: space-evenly;
 }
 
-.card1 {
+.card:nth-child(1) {
     background-image: url(../images/pexels-pixabay-158826.jpg);
     background-size: cover;
     color: aqua;
@@ -229,7 +242,7 @@ section h2 {
     border: 3px solid rgb(148, 246, 246);
 }
 
-.card2 {
+.card:nth-child(2) {
     background-image: url(../images/accounting-black-budget-calculating-wallpaper-preview.jpg);
     background-size: cover;
     color: aqua;
@@ -238,9 +251,10 @@ section h2 {
     margin-top: 15px;
     padding: 50px;
     border: 3px solid rgb(148, 246, 246);
+    transition-delay: 200ms;
 }
 
-.card3 {
+.card:nth-child(3) {
     background-size: cover;
     background-image: url(../images/7ff5aa2204c532c80dcc425080aeb1be.jpg);
     color: aqua;
@@ -250,9 +264,10 @@ section h2 {
     margin-top: 15px;
     padding: 50px;
     border: 3px solid rgb(148, 246, 246);
+    transition-delay: 300ms;
 }
 
-.card4 {
+.card:nth-child(4) {
     background-image: url(../images/A-Small-Family-Of-4k-Minimalist-Nature-Wallpaper-Lonely-Trees.jpg);
     background-size: cover;
     color: aqua;
@@ -264,6 +279,7 @@ section h2 {
     align-items: flex-start; */
     padding: 50px;
     border: 3px solid rgb(148, 246, 246);
+    transition-delay: 400ms;
 }
 
 .card-header {

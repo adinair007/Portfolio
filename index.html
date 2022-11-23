@@ -1,104 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script defer src="./assets/js/portfolio.js"></script>
     <title>Portfolio- Aditya Nair</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Aditya Nair  </h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#work">Work</a>
-                </li>
-                <li>
-                    <a href="#contact-me">Contact Me</a>
-                </li>
-                <!-- <li>
+      <h1>Aditya Nair</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#about-me">About Me</a>
+          </li>
+          <li>
+            <a href="#work">Work</a>
+          </li>
+          <li>
+            <a href="#contact-me">Contact Me</a>
+          </li>
+          <!-- <li>
                     <a href="#Resume">Resume</a>
                 </li> -->
-            </ul>
-        </nav>
+        </ul>
+      </nav>
     </header>
     <figure class="hero">
-        <div class="hero-header">
-            <h2>Welcome!</h2>
-        </div>
+      <div class="hero-header hidden">
+        <h2>Welcome!</h2>
+      </div>
     </figure>
     <div class="headings">
-        <main>
-            <section id="about-me" class="about-me">
-                <h2>About Me</h2>
-                <div>
-                    <img src="../Portfolio-Challenge2/assets/images/DSC_4561.JPG" > 
-                    <p>
-                        Hey! I'm Aditya and I am an upcoming full-stack developer. I'm from Fort Worth, TX with a Bachelors in Automotive Engineering. I got into web design when looking for a career change and haven't looked back since. I am well versed in HTML and CSS; and am currently enrolled in a full-stack bootcamp with SMU. I look forward to working with you! 
-                    </p>
+      <main>
+        <section id="about-me" class="about-me hidden">
+          <h2>About Me</h2>
+          <div>
+            <img src="../Portfolio-Challenge2/assets/images/DSC_4561.JPG" />
+            <p>
+              Hey! I'm Aditya and I am an upcoming full-stack developer. I'm
+              from Fort Worth, TX with a Bachelors in Automotive Engineering. I
+              got into web design when looking for a career change and haven't
+              looked back since. I am well versed in HTML, CSS and JavaScript; and am
+              currently enrolled in a full-stack bootcamp with SMU. I look
+              forward to working with you!
+            </p>
+          </div>
+        </section>
+        <section id="work" class="work hidden">
+          <h2>Work</h2>
+          <div>
+            <div class="container">
+              <div class="container-header">
+                <h3>
+                  <a href="https://adinair007.github.io/My-Favorite_Crypto/"
+                    >MyFavouriteCrypto</a
+                  >
+                </h3>
+                <h4>JavaScript/ CSS /Cryptocompare API</h4>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card hidden">
+                <div class="card-header">
+                  <h3><a href="LED Wall">LED Wall</a></h3>
+                  <h4>Node/IoT</h4>
                 </div>
-            </section>
-            <section id="work" class="work">
-                <h2>Work</h2>
-                <div>
-                    <figure class="container">
-                        <div class="container-header">
-                            <h3><a href="https://adinair007.github.io/My-Favorite_Crypto/">MyFavouriteCrypto</a></h3>
-                            <h4>JavaScript/ CSS /Cryptocompare API</h4>
-                        </div>
-                    </figure>
-                    <figure class="cards">
-                        <div class="card1">
-                            <div class="card-header">
-                                <h3><a href="LED Wall">LED Wall</a></h3>
-                                <h4>Node/IoT</h4>
-                            </div>
-                        </div>
-                        <div class="card2">
-                            <div class="card-header">
-                                <h3><a href="Calculator">Calculator</a></h3>
-                                <h4>React/ JavaScript/ CSS</h4>
-                            </div>
-                        </div>
-                        <div class="card3">
-                            <div class="card-header">
-                                <h3><a href="Pastel Puzzels">Pastel Puzzels</a></h3>
-                                <h4>MERN Stack</h4>
-                            </div>
-                        </div>
-                        <div class="card4">
-                            <div class="card-header">
-                                <h3><a href="Run Buddy">Run Buddy</a></h3>
-                                <h4>HTML/ CSS</h4>
-                            </div>
-                        </div>
-                    </figure>
-
+              </div>
+              <div class="card hidden">
+                <div class="card-header">
+                  <h3><a href="Calculator">Calculator</a></h3>
+                  <h4>React/ JavaScript/ CSS</h4>
                 </div>
-            </section>
-            <section id="contact-me" class="contact-me">
-                <h2>Contact Me</h2>
-                <div class="contacts">
-                    <h4><a href="adinair.in@outlook.com">adinair.in@outlook.com</a></h4>
-                    <h4>469-724-7966</h4>
-                    <h4><a href="https://www.linkedin.com/in/adityanair09/">adityanair09</a></h4>
+              </div>
+              <div class="card hidden">
+                <div class="card-header">
+                  <h3><a href="Pastel Puzzels">Pastel Puzzels</a></h3>
+                  <h4>MERN Stack</h4>
                 </div>
-            </section>>
-        </main>
+              </div>
+              <div class="card hidden">
+                <div class="card-header">
+                  <h3><a href="Run Buddy">Run Buddy</a></h3>
+                  <h4>HTML/ CSS</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact-me" class="contact-me hidden">
+          <h2>Contact Me</h2>
+          <div class="contacts hidden">
+            <h4><a href="adinair.in@outlook.com">adinair.in@outlook.com</a></h4>
+            <h4>469-724-7966</h4>
+            <h4>
+              <a href="https://www.linkedin.com/in/adityanair09/"
+                >adityanair09</a
+              >
+            </h4>
+          </div>
+        </section>
+        >
+      </main>
     </div>
     <footer>
-        <div class="footer">
-            <h5>Made by Aditya Nair</h5>
-        </div>
+      <div class="footer">
+        <h5>Made by Aditya Nair</h5>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
