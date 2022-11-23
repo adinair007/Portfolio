@@ -1,6 +1,6 @@
 # Portfolio
 
-Deployed link: https://adinair007.github.io/Portfolio-Challenge2/
+Deployed link: https://adinair007.github.io/Portfolio/
 
 
 
