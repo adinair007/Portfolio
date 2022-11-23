@@ -1,5 +1,9 @@
 # Portfolio-Challenge 2
 
+Deployed link: https://adinair007.github.io/Portfolio-Challenge2/
+
+
+
 This example of my portfolio has covered the following requirements:
 
 1. When the portfolio loads , user is presented with my name, my photo, and links to sections about me, my work, and how to contact me
