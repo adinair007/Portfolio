@@ -1,4 +1,4 @@
-# Portfolio-Challenge 2
+# Portfolio
 
 Deployed link: https://adinair007.github.io/Portfolio-Challenge2/
 
