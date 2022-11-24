@@ -27,6 +27,13 @@ header {
     color: white;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    position: fixed;
+    
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    transition: all 300ms ease-in-out;
 }
 
 header h1 {
@@ -354,6 +361,16 @@ section h2 {
     text-align: center;
     margin-left: auto;
     color: aqua;
+}
+
+/* Scroll Properties */
+
+.scoll-down header {
+    transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up header {
+    filter:drop-shadow(0 -10px 20px rgb(170,170,170))
 }
 
 @media screen and (max-device-width: 480px) {
